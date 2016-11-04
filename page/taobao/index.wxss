@@ -1,0 +1,123 @@
+.index{
+    background-color: #FBF9FE;
+    font-family: -apple-system-font,Helvetica Neue,Helvetica,sans-serif;
+    flex: 1;
+    min-height: 100%;
+    font-size: 32rpx;
+}
+.header{
+    line-height: 1;
+    height:74rpx;
+    padding:12rpx 15rpx;
+    box-sizing: border-box;
+    background:#f90;
+}
+.header input{
+    height:50rpx;
+    width:80%;
+    border:2px solid #e4393c;
+}
+.body{
+    padding-left: 30rpx;
+    padding-right: 30rpx;
+    overflow: hidden;
+}
+.title{
+    font-size: 52rpx;
+    color:#e4393c;
+    font-weight:bold;
+}
+.desc{
+    margin-top: 10rpx;
+    color: #888888;
+    font-size: 28rpx;
+}
+.banner{
+    width:100%;
+    height:234rpx;
+}
+.banner swiper{
+    height:100%;
+}
+.slide-image{
+    display:block;
+    width:100%;
+    height:100%;
+}
+.banner-2{
+    display:block;
+    width:100%;
+    height:224rpx;
+}
+.menu-wrp {
+  width:100%;
+  margin-top:20rpx;
+}
+.menu-wrp:after{
+    content:"";
+    display:block;
+    clear:both;
+}
+.menu-list{
+    float:left;
+    width:20%;
+    box-sizing: border-box;
+    padding-bottom:10px;
+}
+
+.menu-img{
+    width:120rpx;
+    height:84rpx;
+    display:block;
+    margin:0 auto;
+    margin-bottom:5px;
+}
+.menu-desc{
+    background-color:#ffffff;
+    color:#333333;
+    width:100%;
+    text-align: center;
+    display:block;
+    font-size:12px;
+}
+.gap-1,.gap-2{
+    width:100%;
+    height:5rpx;
+    background:rgb(238, 238, 238);
+}
+.tb-toppest{
+    width:100%;
+    height:70rpx;
+    padding:5rpx 10rpx;
+    display:flex;
+    justify-content: center;
+    align-content: center;
+}
+.tb-toppest image{
+    display:inline-block;
+    width:130rpx;
+    height:40rpx;
+    vertical-align: middle;
+    margin-left:20rpx;
+}
+.tb-toppest .btn{
+    border:1px solid #e4393c;
+    color:#e4393c;
+    text-align:center;
+    display: inline-block;
+    font-size:10px;
+    width:56rpx;
+    height:40rpx;
+    line-height:37rpx;
+    margin-left:30rpx;
+    border-radius:3px;
+}
+.tb-toppest .content{
+    display: inline-block;
+    font-size:12px;
+    width:486rpx;
+    height:37rpx;
+    line-height:37rpx;
+    border-radius:3px;
+    margin-left:15rpx;
+}

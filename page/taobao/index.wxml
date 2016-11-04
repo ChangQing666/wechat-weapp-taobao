@@ -1,0 +1,34 @@
+<view class="index">
+    <!--<view class="header">
+    <image src="../../images/tao.png"></image>
+        <view class="search"></view>
+        <input auto-focus />
+    </view>-->
+
+    <view class="banner">
+        <swiper indicator-dots="{{indicatorDots}}"
+          autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+          <block wx:for="{{imgUrls}}">
+            <swiper-item>
+              <image class="banner-img" src="{{item}}" class="slide-image"/>
+            </swiper-item>
+          </block>
+        </swiper>
+    </view >
+    <image class="banner-2" src="http://img.alicdn.com/tps/TB13LWiOXXXXXbJXFXXXXXXXXXX-1125-336.png"></image>
+
+     <view  class="menu-wrp">
+         <view class="menu-list" wx:for="{{menu.imgUrls}}">
+              <image class="menu-img" src="{{item}}"/>
+              <view  class="menu-desc" >{{menu.descs[index]}}</view>
+         </view>
+      </view>
+     
+     <view class="gap-1"></view >
+    <view class="tb-toppest">
+      <image src="http://gw.alicdn.com/tps/i3/TB12wM3HXXXXXbxapXXdFmWHFXX-207-60.png?imgtag=avatar"></image>
+      <view class="btn">双11</view>
+       <view class="content">你家跑步机有那么安静吗?</view>
+    </view >
+    <view class="gap-2"></view >
+
