@@ -1,3 +1,6 @@
+
+//获取应用实例
+var app = getApp();
 Page({
   data: {
     imgUrls: [
@@ -38,5 +41,18 @@ Page({
       ]
     }
 
+  },
+  //事件处理函数
+  bindViewTap: function() {
+    wx.navigateTo({
+      url: '../API/image/image'
+    })
+  },
+  onLoad: function () {
+    console.log('taobao-onLoad')
+    var that = this
+    //调用应用实例的方法获取全局数据
+    app.getTaobaodata();
   }
+ 
 })
