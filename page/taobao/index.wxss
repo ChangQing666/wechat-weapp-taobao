@@ -99,26 +99,27 @@
     height:40rpx;
     vertical-align: middle;
     margin-left:20rpx;
-    margin-top:10rpx;
+    margin-top:20rpx;
 }
 .tb-toppest .btn{
     border:1px solid #e4393c;
     color:#e4393c;
     text-align:center;
     display: inline-block;
-    font-size:10px;
-    width:56rpx;
+    font-size:11px;
+    width:70rpx;
     height:40rpx;
+    margin-top:14rpx;
     line-height:37rpx;
     margin-left:30rpx;
-    border-radius:3px;
+    border-radius:4px;
 }
 .tb-toppest .content{
     display: inline-block;
     font-size:12px;
     width:486rpx;
-    height:37rpx;
-    line-height:37rpx;
+    height:70rpx;
+    line-height:70rpx;
     border-radius:3px;
-    margin-left:15rpx;
+    margin-left:18rpx;
 }

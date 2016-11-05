@@ -1,0 +1,19 @@
+.index{
+    background-color: #FBF9FE;
+    font-family: -apple-system-font,Helvetica Neue,Helvetica,sans-serif;
+    flex: 1;
+    min-height: 100%;
+    font-size: 32rpx;
+}
+.btn_login{
+    background:#f40;
+    color:#f97;
+}
+.btn_reg{
+    float:left;
+    width:80rpx;
+    color:#f40;
+}
+.btn_forget{
+    float:right;
+}

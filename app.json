@@ -1,8 +1,9 @@
 {
   "pages": [
     "page/taobao/index",
-    "page/test/index",
-
+    "page/mytaobao/index",
+     "page/cart/index",
+     
     "page/component/index",
     "page/component/component-pages/action-sheet/action-sheet",
     "page/component/component-pages/audio/audio",
@@ -71,10 +72,13 @@
 
   ],
   "window": {
-    "navigationBarTextStyle": "black",
+    "navigationBarTextStyle": "white",
+    
     "navigationBarTitleText": "淘宝",
     "navigationBarBackgroundColor": "#ff9900",
-    "backgroundColor": "#0099ff"
+    "backgroundColor": "#fff",
+    "enablePullDownRefresh":true,
+    "backgroundTextStyle":"dark"
   },
   "tabBar": {
     "color": "#ff6600",
@@ -92,21 +96,21 @@
       "selectedIconPath": "image/icon_API_HL.png",
       "text": "接口"
     },{
-      "pagePath": "page/zhaoshazhushou/index",
+      "pagePath": "page/cart/index",
       "iconPath": "image/icon_component.png",
       "selectedIconPath": "image/icon_component_HL.png",
-      "text": "找纱助手"
+      "text": "购物车"
     }, {
       "pagePath": "page/taobao/index",
       "iconPath": "image/icon_API.png",
       "selectedIconPath": "image/icon_API_HL.png",
-      "text": "淘宝网"
+      "text": "首页"
     },
       {
-        "pagePath": "page/test/index",
+        "pagePath": "page/mytaobao/index",
         "iconPath": "image/arrowright.png",
         "selectedIconPath": "image/green_tri.png",
-        "text": "测试"
+        "text": "我的淘宝"
       }
     ]
   },

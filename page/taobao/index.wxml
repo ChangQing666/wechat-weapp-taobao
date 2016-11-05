@@ -31,5 +31,5 @@
        <view class="content">你家跑步机有那么安静吗?</view>
     </view >
     <view class="gap-2"></view >
-    <button type="primary" bindtap="bindViewTap">跳转至API页面</button>
-
+    <button type="primary" bindtap="bindViewTap">{{tb}}跳转至API页面</button>
+<button type="warn" bindtap="showloading">显示导航条加载</button>

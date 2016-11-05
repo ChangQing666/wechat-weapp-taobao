@@ -3,6 +3,7 @@
 var app = getApp();
 Page({
   data: {
+    tb:"",
     imgUrls: [
       'http://gw.alicdn.com/imgextra/i4/195/TB2TTzyaCiJ.eBjSszfXXa4bVXa_!!195-0-yamato.jpg_q50.jpg',
       'http://gw.alicdn.com/imgextra/i2/196/TB2XHXZamCI.eBjy1XbXXbUBFXa_!!196-0-yamato.jpg_q50.jpg',
@@ -43,16 +44,37 @@ Page({
 
   },
   //事件处理函数
+  showloading:function(){
+    wx.showNavigationBarLoading();
+    wx.setNavigationBarTitle({
+  title: '当前页面'
+})
+  },
   bindViewTap: function() {
-    wx.navigateTo({
-      url: '../API/image/image'
-    })
+    var that = this;
+    wx.request({
+      url: 'http://changqing.tech/test.php', //仅为示例，并非真实的接口地址
+      data: {
+      },
+      header: {
+          'Content-Type': 'application/json'
+      },
+      success: function(res) {
+        console.log("从app.js请求服务器test.php获取数据")
+        console.log(this);
+        console.log(that)
+        console.log(res.data);
+        that.setData({
+          tb:res.data
+        })
+       console.log(that.data.tb.adobj.title)
+      }
+    });
+    
   },
   onLoad: function () {
     console.log('taobao-onLoad')
-    var that = this
-    //调用应用实例的方法获取全局数据
-    app.getTaobaodata();
+     
   }
  
 })

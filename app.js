@@ -22,7 +22,7 @@ App({
         console.log("从app.js请求服务器test.php获取数据")
         console.log(res.data);
         that.globalData.taobao = res.data;
-        console.log(that.globalData.taobao);
+       
       }
     });
   },
