@@ -1,9 +1,14 @@
 <view class="index">
-    <!--<view class="header">
-    <image src="../../images/tao.png"></image>
-        <view class="search"></view>
-        <input auto-focus />
-    </view>-->
+    <view class="header">
+        <image src="../../../image/tao.png"></image>
+          
+          <input type="text"></input>
+          <view class="search">
+            <image src="../../../image/search.png"></image>
+            <text> 寻找宝贝店铺</text>
+          </view>
+      
+    </view>
 
     <view class="banner">
         <swiper indicator-dots="{{indicatorDots}}"

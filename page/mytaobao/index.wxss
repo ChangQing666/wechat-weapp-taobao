@@ -5,15 +5,77 @@
     min-height: 100%;
     font-size: 32rpx;
 }
+.header{
+    width: 100%;
+    height: 52px;
+    line-height: 52px;
+    text-align: left;
+    box-sizing: border-box;
+    padding-left: 20rpx;
+    padding-right:20rpx;
+    font-size: 16px;
+    font-weight: bold;
+    color: rgb(51, 51, 51);
+    background: rgb(238, 238, 238);
+}
+
+.header .title{
+    display:inline-block;
+    width:80%;
+}
+.header .desc{
+    display:inline-block;
+    width:20%;
+    text-align:right;
+    
+}
+ .field{
+    border-bottom: 1px solid #DDD;
+    padding: 10rpx;
+    color: #6C6C6C;
+    background-color: #fff;
+    text-align: left;
+    height:70rpx;
+}
+.field:after{
+    content:"";
+    display:block;
+    clear:both;
+}
+.field text{
+    float:left;
+    width: 20%;
+    height:80rpx;
+    line-height:80rpx;
+}
+.field input{
+    margin-left:30%;
+    height:80rpx;
+    line-height:80rpx;
+}
+
 .btn_login{
     background:#f40;
     color:#f97;
+    margin:40rpx 0;
 }
-.btn_reg{
+.reg_forget{
+    padding:0 10rpx;
+}
+.reg_forget:after{
+    content:"";
+    display:block;
+    clear:both;
+}
+.btn_reg,.btn_forget{
+    font-size:13px;
+    border:none;
+}
+.reg_forget .btn_reg{
     float:left;
-    width:80rpx;
     color:#f40;
 }
-.btn_forget{
-    float:right;
+.reg_forget .btn_forget{
+   float:right;
+    color:#f40;
 }

@@ -10,12 +10,47 @@
     height:74rpx;
     padding:12rpx 15rpx;
     box-sizing: border-box;
-    background:#f90;
+    background:#fe5400;
+    position:relative;
+}
+.header image{
+    width:68rpx;
+    height:74rpx;
+    position:absolute;
+    left:0;
+    top:0;
 }
 .header input{
+    position:absolute;
+    left:70rpx;
+    top:12rpx;
     height:50rpx;
-    width:80%;
-    border:2px solid #e4393c;
+    width:88%;
+    background:#b52600;
+    box-sizing: border-box;
+}
+
+.header .search{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    font-size: 13px;
+    display: block;
+    color: #F0E0DC;
+    height:50rpx;
+}
+.header .search image{
+    display: inline-block;
+    width:38rpx;
+    height:38rpx;
+    line-height:38rpx;
+    margin-top:6rpx;
+}
+.header .search text{
+    display:inline-block;
+    padding-left:38rpx;
+    line-height:50rpx;
 }
 .body{
     padding-left: 30rpx;

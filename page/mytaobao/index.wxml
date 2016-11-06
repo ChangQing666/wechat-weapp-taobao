@@ -4,24 +4,32 @@
         <view class="desc">关闭</view>
     </view>
 
-    <view >
-        <view >
-            <label>账户 </label>
+    <view class="main">  </view>
+        <view class="field">
+            <text>账户</text>
             <input placeholder="手机号/邮箱/会员"></input>
         <view />
-         <view >
-            <label>登录密码</label>
+         <view class="field">
+            <text>登录密码</text>
             <input placeholder="请输入密码"></input>
         <view />
-    </view>
- <button class="btn_login" bindtap="login">{{btn_login}}</button>
-     <view class="reg_forget">
-        <button class="btn_reg">免费注册</button>
-        <button class="btn_forget">忘记密码</button>
-     <view /> 
+   
+
+        <button class="btn_login" bindtap="login">{{btn_login}}</button>
+        
+        <view class="reg_forget">
+            <text class="btn_reg">免费注册</text>
+            <text class="btn_forget">忘记密码</text>
+        <view /> 
+
+
       <view >
-     <view />  <view >
-     <view />  <view >
+     <view /> 
+
+      <view >
+     <view /> 
+
+      <view >
      <view />
 </view>
 
