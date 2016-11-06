@@ -4,6 +4,10 @@ var app = getApp();
 Page({
   data: {
     tb:"",
+    banner3_title: "",
+    banner3_img:"",
+    banner3_desc_bg:"",
+   
     imgUrls: [
       'http://gw.alicdn.com/imgextra/i4/195/TB2TTzyaCiJ.eBjSszfXXa4bVXa_!!195-0-yamato.jpg_q50.jpg',
       'http://gw.alicdn.com/imgextra/i2/196/TB2XHXZamCI.eBjy1XbXXbUBFXa_!!196-0-yamato.jpg_q50.jpg',
@@ -45,36 +49,35 @@ Page({
   },
   //事件处理函数
   showloading:function(){
-    wx.showNavigationBarLoading();
-    wx.setNavigationBarTitle({
-  title: '当前页面'
-})
   },
   bindViewTap: function() {
+  },
+  onShow:function(){
+     wx.showNavigationBarLoading();
+     wx.setNavigationBarTitle({
+     title: '首页'
+   })
+  },
+  onLoad: function () {
+    console.log('taobao-onLoad')
     var that = this;
-    wx.request({
+     wx.request({
       url: 'http://changqing.tech/test.php', //仅为示例，并非真实的接口地址
-      data: {
-      },
+      data: { },
       header: {
           'Content-Type': 'application/json'
       },
       success: function(res) {
         console.log("从app.js请求服务器test.php获取数据")
-        console.log(this);
-        console.log(that)
-        console.log(res.data);
+       
         that.setData({
-          tb:res.data
+          tb:res.data,
+          banner3_title:res.data.title,
+          banner3_img:res.data.img,
+          banner3_desc:res.data.desc,
         })
-       console.log(that.data.tb.adobj.title)
+       console.log(that.banner3_title);
       }
     });
-    
-  },
-  onLoad: function () {
-    console.log('taobao-onLoad')
-     
   }
- 
 })

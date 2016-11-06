@@ -8,6 +8,12 @@ Page({
       btn_login:"正在登录中..."
     })
     // wx.redirectTo()
-  }
+  },
+  onShow:function(){
+     wx.showNavigationBarLoading();
+     wx.setNavigationBarTitle({
+     title: '我的淘宝'
+   })
+  },
    
 })

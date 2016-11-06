@@ -36,5 +36,20 @@
        <view class="content">你家跑步机有那么安静吗?</view>
     </view >
     <view class="gap-2"></view >
-    <button type="primary" bindtap="bindViewTap">{{tb}}跳转至API页面</button>
-<button type="warn" bindtap="showloading">显示导航条加载</button>
+   
+    <view class="banner-3">
+      < image class="title" src="../../../image/banner3_title.png"></image>
+      <view class="content">
+       
+         <view  class="item" wx:for="{{banner3_title}}" wx:for-index="idx" wx:for-item="item">  
+            <view class="_title">{{item}}</view>
+           <view class="_img_box">
+             <image class="_img" src="{{banner3_img[idx]}}"></image>
+           </view>
+            <view class="_desc_bg">
+              {{banner3_desc[idx]}}
+            </view>
+        </view>
+       
+      </view>
+    </view >
