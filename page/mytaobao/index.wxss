@@ -27,7 +27,7 @@
     display:inline-block;
     width:20%;
     text-align:right;
-    
+    color:#ccc;
 }
  .field{
     border-bottom: 1px solid #DDD;
@@ -52,6 +52,9 @@
     margin-left:30%;
     height:80rpx;
     line-height:80rpx;
+}
+.input-placeholder{
+    color:#e2e2e2;
 }
 
 .btn_login{
